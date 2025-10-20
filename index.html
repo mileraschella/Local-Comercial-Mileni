@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Template Básico</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-content">
+<a class="brand" href="index.html" aria-label="Ir al inicio">
+<img src="Imagenes para tp/mileni logos+info importante.png" alt="Logo de la marca" class="brand-logo">
+</a>
+<nav class="main-nav" aria-label="Principal">
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+<ul id="nav-menu">
+<li><a href="index.html" class="active">Inicio</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="experiencias.html">Experiencias</a></li>
+<li><a href="sobre-mileni.html">Sobre Mileni</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-text">
+<h1>Cada pieza cuenta una historia</h1>
+<p>En Mileni vas a encontrar joyas únicas en plata 925, acero quirúrgico y chapadas en oro, pensadas para acompañarte en cada momento.</p>
+</div>
+<div class="hero-media">
+<img src="Imagenes para tp/mileni logos+info importante.png" alt="Imagen destacada">
+</div>
+</div>
+</section>
+
+<section class="intro container">
+<h2>Bienvenidos</h2>
+<p>Bienvenidos al universo de Mileni, un espacio donde la elegancia se encuentra con la autenticidad.
+  Nuestras joyas no solo complementan tu look: te acompañan en los momentos que más recordás.
+  Cada diseño tiene un significado y busca resaltar lo que te hace única.
+  Creemos que una joya no es solo un accesorio, sino una forma de expresión. Por eso, cada una de nuestras piezas está pensada para inspirarte, para hacerte sentir especial y recordarte que el brillo más lindo es el que llevás dentro. 💖</p>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; 2025 Mileni joyas Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script>
+// Navegación responsive básica sin dependencias
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+</body>
+</html>
+
+

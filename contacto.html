@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Template Básico</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-content">
+<a class="brand" href="index.html" aria-label="Ir al inicio">
+<img src="Imagenes para tp/mileni logos+info importante.png" alt="Logo de la marca" class="brand-logo">
+</a>
+<nav class="main-nav" aria-label="Principal">
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+<ul id="nav-menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="experiencias.html">Experiencias</a></li>
+<li><a href="sobre-mileni.html">Sobre Mileni</a></li>
+<li><a href="contacto.html" class="active">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<h1>Contacto</h1>
+<p>Queremos estar cerca tuyo. Si tenés consultas, querés asesoramiento o simplemente compartir tu experiencia con Mileni, escribinos o buscános en nuestras redes. 💕</p>
+<p>Si querés contactarme, podés escribirme a milenijoyas@gmail.com. Redes sociales:
+  Instagram: @Joyas.Mileni
+  Facebook: Mileni Joyas
+  TikTok: @mileni.joyeria
+  Numero de contacto: +54 9 11 2345-6789
+</p>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; 2025 Mileni joyas. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+</body>
+</html>
+
+
