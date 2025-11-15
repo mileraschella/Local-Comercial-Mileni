@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collares | Mileni Joyas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-content">
+<a class="brand" href="index.html" aria-label="Ir al inicio">
+<img src="Imagenes para tp/Logo transparente.jpeg" alt="Logo de la marca" class="brand-logo">
+</a>
+<nav class="main-nav" aria-label="Principal">
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+<ul id="nav-menu">
+<li><a href="index.html" target="_blank" rel="noopener">Inicio</a></li>
+<li><a href="collares.html" class="active" target="_blank" rel="noopener">Collares</a></li>
+<li><a href="anillos.html" target="_blank" rel="noopener">Anillos</a></li>
+<li><a href="aros.html" target="_blank" rel="noopener">Aros</a></li>
+<li><a href="combos-mileni.html" target="_blank" rel="noopener">Combos Mileni</a></li>
+<li><a href="sobre-mileni.html" target="_blank" rel="noopener">Sobre Mileni</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="page-header">
+<div class="container">
+<h1>Collares</h1>
+<p>Descubrí nuestra colección de collares únicos, diseñados para complementar tu estilo y acompañarte en cada momento especial.</p>
+</div>
+</section>
+
+<section class="container">
+<div class="product-grid">
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 1.jpg" alt="Collar Elegante">
+</div>
+<div class="product-info">
+<h3>Collar Elegante</h3>
+<p>Plata 925</p>
+<p>$12.000</p>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 2.jpg" alt="Collar Minimalista">
+</div>
+<div class="product-info">
+<h3>Collar Minimalista</h3>
+<p>Chapado en oro 18K</p>
+<p>$10.000</p>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 3.jpg" alt="Collar Clásico">
+</div>
+<div class="product-info">
+<h3>Collar Clásico</h3>
+<p>Acero quirúrgico</p>
+<p>$8.000</p>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 4.jpg" alt="Collar Moderno">
+</div>
+<div class="product-info">
+<h3>Collar Moderno</h3>
+<p>Plata 925</p>
+<p>$10.000</p>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 5.jpg" alt="Collar Delicado">
+</div>
+<div class="product-info">
+<h3>Collar Delicado</h3>
+<p>Chapado en oro 18K</p>
+<p>$11.000</p>
+</div>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="Imagenes para tp/collar 6.jpg" alt="Collar Especial">
+</div>
+<div class="product-info">
+<h3>Collar Especial</h3>
+<p>Acero quirúrgico</p>
+<p>$12.000</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; 2025 Mileni joyas. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (!btn || !menu) return;
+  btn.addEventListener('click', function(){
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu.classList.toggle('open');
+  });
+})();
+</script>
+</body>
+</html>
+
